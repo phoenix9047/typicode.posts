@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Endpoint_2" class="navigator-link">
-              <span class="suite-name border-passed">Endpoint 2</span>
+            <a href="#" panel-name="suite-AllTests" class="navigator-link">
+              <span class="suite-name border-failed">AllTests</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Endpoint_2" class="navigator-link ">
-                    <span>endpoint2.xml</span>
+                  <a href="#" panel-name="test-xml-AllTests" class="navigator-link ">
+                    <span>all_tests.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Endpoint_2" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" panel-name="testlist-AllTests" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Endpoint_2" class="navigator-link ">
+                  <a href="#" panel-name="group-AllTests" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Endpoint_2" class="navigator-link ">
+                  <a href="#" panel-name="times-AllTests" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Endpoint_2" class="navigator-link ">
+                  <a href="#" panel-name="reporter-AllTests" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Endpoint_2" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-AllTests" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Endpoint_2" class="navigator-link ">
+                  <a href="#" panel-name="chronological-AllTests" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,41 +93,65 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-AllTests" class="hide-methods failed suite-AllTests"> (hide)</a> <!-- hide-methods failed suite-AllTests -->
+                      <a href="#" panel-name="suite-AllTests" class="show-methods failed suite-AllTests"> (show)</a> <!-- show-methods failed suite-AllTests -->
+                    </span>
+                    <div class="method-list-content failed suite-AllTests">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AllTests" title="negative_tests.TestEndpoint1" class="method navigator-link" hash-for-method="push_document_with_post_query(https://jsonplaceholder.typicode.com/posts)">push_document_with_post_query(https://jsonplaceholder.typicode.com/posts)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-AllTests -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Endpoint_2" class="hide-methods passed suite-Endpoint_2"> (hide)</a> <!-- hide-methods passed suite-Endpoint_2 -->
-                      <a href="#" panel-name="suite-Endpoint_2" class="show-methods passed suite-Endpoint_2"> (show)</a> <!-- show-methods passed suite-Endpoint_2 -->
+                      <a href="#" panel-name="suite-AllTests" class="hide-methods passed suite-AllTests"> (hide)</a> <!-- hide-methods passed suite-AllTests -->
+                      <a href="#" panel-name="suite-AllTests" class="show-methods passed suite-AllTests"> (show)</a> <!-- show-methods passed suite-AllTests -->
                     </span>
-                    <div class="method-list-content passed suite-Endpoint_2">
+                    <div class="method-list-content passed suite-AllTests">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Endpoint_2" title="positive_tests.TestEndpoint2" class="method navigator-link" hash-for-method="check_document_keys_and_values_are_correct">check_document_keys_and_values_are_correct</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-AllTests" title="positive_tests.TestEndpoint1" class="method navigator-link" hash-for-method="check_array_of_documents_is_returned">check_array_of_documents_is_returned</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Endpoint_2" title="positive_tests.TestEndpoint2" class="method navigator-link" hash-for-method="check_query_for_single_document_is_responded_correctly(https://jsonplaceholder.typicode.com/posts, 1)">check_query_for_single_document_is_responded_correctly(https://jsonplaceholder.typicode.com/posts, 1)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-AllTests" title="positive_tests.TestEndpoint2" class="method navigator-link" hash-for-method="check_document_keys_and_values_are_correct">check_document_keys_and_values_are_correct</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Endpoint_2" title="positive_tests.TestEndpoint2" class="method navigator-link" hash-for-method="check_response_contains_only_one_document">check_response_contains_only_one_document</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-AllTests" title="positive_tests.TestEndpoint1" class="method navigator-link" hash-for-method="check_query_for_all_documents_is_responded_correctly(https://jsonplaceholder.typicode.com/posts)">check_query_for_all_documents_is_responded_correctly(https://jsonplaceholder.typicode.com/posts)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Endpoint_2" title="negative_tests.TestEndpoint2" class="method navigator-link" hash-for-method="request_to_non_existing_id_should_be_rejected(https://jsonplaceholder.typicode.com/posts, 500)">request_to_non_existing_id_should_be_rejected(https://jsonplaceholder.typicode.com/posts, 500)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-AllTests" title="positive_tests.TestEndpoint2" class="method navigator-link" hash-for-method="check_query_for_single_document_is_responded_correctly(https://jsonplaceholder.typicode.com/posts, 1)">check_query_for_single_document_is_responded_correctly(https://jsonplaceholder.typicode.com/posts, 1)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Endpoint_2" title="negative_tests.TestEndpoint2" class="method navigator-link" hash-for-method="request_to_non_numeric_id_should_be_rejected(https://jsonplaceholder.typicode.com/posts)">request_to_non_numeric_id_should_be_rejected(https://jsonplaceholder.typicode.com/posts)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-AllTests" title="positive_tests.TestEndpoint2" class="method navigator-link" hash-for-method="check_response_contains_only_one_document">check_response_contains_only_one_document</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Endpoint_2 -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AllTests" title="negative_tests.TestEndpoint2" class="method navigator-link" hash-for-method="request_to_non_existing_id_should_be_rejected(https://jsonplaceholder.typicode.com/posts, 500)">request_to_non_existing_id_should_be_rejected(https://jsonplaceholder.typicode.com/posts, 500)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AllTests" title="negative_tests.TestEndpoint2" class="method navigator-link" hash-for-method="request_to_non_numeric_id_should_be_rejected(https://jsonplaceholder.typicode.com/posts)">request_to_non_numeric_id_should_be_rejected(https://jsonplaceholder.typicode.com/posts)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-AllTests -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -138,36 +162,36 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Endpoint_2" class="panel Endpoint_2">
-          <div class="suite-Endpoint_2-class-passed">
+        <div panel-name="suite-AllTests" class="panel AllTests">
+          <div class="suite-AllTests-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">negative_tests.TestEndpoint2</span>
+              <img src="failed.png"/>
+              <span class="class-name">negative_tests.TestEndpoint1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="request_to_non_existing_id_should_be_rejected(https://jsonplaceholder.typicode.com/posts, 500)">
-                  </a> <!-- request_to_non_existing_id_should_be_rejected(https://jsonplaceholder.typicode.com/posts, 500) -->
-                  <span class="method-name">request_to_non_existing_id_should_be_rejected</span>
-                  <span class="parameters">(https://jsonplaceholder.typicode.com/posts, 500)</span>
-                  <em>
-(A GET request to a non-existing ID should be rejected with 404)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="request_to_non_numeric_id_should_be_rejected(https://jsonplaceholder.typicode.com/posts)">
-                  </a> <!-- request_to_non_numeric_id_should_be_rejected(https://jsonplaceholder.typicode.com/posts) -->
-                  <span class="method-name">request_to_non_numeric_id_should_be_rejected</span>
+                  <a name="push_document_with_post_query(https://jsonplaceholder.typicode.com/posts)">
+                  </a> <!-- push_document_with_post_query(https://jsonplaceholder.typicode.com/posts) -->
+                  <span class="method-name">push_document_with_post_query</span>
                   <span class="parameters">(https://jsonplaceholder.typicode.com/posts)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [404] but found [201]
+	at negative_tests.NegativeTest.response_is_empty_http_not_found(NegativeTest.java:25)
+	at negative_tests.TestEndpoint1.push_document_with_post_query(TestEndpoint1.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
                   <em>
-(A GET request to a non-numeric ID should be rejected with 404)                  </em>
+(Send a POST request to endpoint /posts and verify it rejects with 404)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Endpoint_2-class-passed -->
-          <div class="suite-Endpoint_2-class-passed">
+          </div> <!-- suite-AllTests-class-failed -->
+          <div class="suite-AllTests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">positive_tests.TestEndpoint2</span>
@@ -202,117 +226,210 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Endpoint_2-class-passed -->
-        </div> <!-- panel Endpoint_2 -->
-        <div panel-name="test-xml-Endpoint_2" class="panel">
+          </div> <!-- suite-AllTests-class-passed -->
+          <div class="suite-AllTests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">negative_tests.TestEndpoint2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="request_to_non_existing_id_should_be_rejected(https://jsonplaceholder.typicode.com/posts, 500)">
+                  </a> <!-- request_to_non_existing_id_should_be_rejected(https://jsonplaceholder.typicode.com/posts, 500) -->
+                  <span class="method-name">request_to_non_existing_id_should_be_rejected</span>
+                  <span class="parameters">(https://jsonplaceholder.typicode.com/posts, 500)</span>
+                  <em>
+(A GET request to a non-existing ID should be rejected with 404)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="request_to_non_numeric_id_should_be_rejected(https://jsonplaceholder.typicode.com/posts)">
+                  </a> <!-- request_to_non_numeric_id_should_be_rejected(https://jsonplaceholder.typicode.com/posts) -->
+                  <span class="method-name">request_to_non_numeric_id_should_be_rejected</span>
+                  <span class="parameters">(https://jsonplaceholder.typicode.com/posts)</span>
+                  <em>
+(A GET request to a non-numeric ID should be rejected with 404)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AllTests-class-passed -->
+          <div class="suite-AllTests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">positive_tests.TestEndpoint1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="check_array_of_documents_is_returned">
+                  </a> <!-- check_array_of_documents_is_returned -->
+                  <span class="method-name">check_array_of_documents_is_returned</span>
+                  <em>
+(Content of the response should be a JSON Array and should contain at least 1 document)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="check_query_for_all_documents_is_responded_correctly(https://jsonplaceholder.typicode.com/posts)">
+                  </a> <!-- check_query_for_all_documents_is_responded_correctly(https://jsonplaceholder.typicode.com/posts) -->
+                  <span class="method-name">check_query_for_all_documents_is_responded_correctly</span>
+                  <span class="parameters">(https://jsonplaceholder.typicode.com/posts)</span>
+                  <em>
+(Verify a response to a simple GET request to /posts)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AllTests-class-passed -->
+        </div> <!-- panel AllTests -->
+        <div panel-name="test-xml-AllTests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/home/leonido/Desktop/eclipse-workspace/typicode.posts/xmls_for_execution/endpoint2.xml</span>
+            <span class="header-content">/home/leonido/Desktop/eclipse-workspace/typicode.posts/xmls_for_execution/all_tests.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite parallel=&quot;classes&quot; name=&quot;Endpoint 2&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;AllTests&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;parameter name=&quot;endpoint&quot; value=&quot;https://jsonplaceholder.typicode.com/posts&quot;/&gt;
-  &lt;parameter name=&quot;non_existing_user_id&quot; value=&quot;500&quot;/&gt;
-  &lt;parameter name=&quot;correct_user_id&quot; value=&quot;1&quot;/&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;Single_documents&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;positive_tests&quot;&gt;
+    &lt;parameter name=&quot;correct_user_id&quot; value=&quot;1&quot;/&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;positive_tests&quot;/&gt;
+    &lt;/packages&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;positive_tests.TestEndpoint1&quot;/&gt;
       &lt;class name=&quot;positive_tests.TestEndpoint2&quot;/&gt;
-      &lt;class name=&quot;negative_tests.TestEndpoint2&quot;/&gt;
+      &lt;class name=&quot;positive_tests.PositiveTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Single_documents --&gt;
-&lt;/suite&gt; &lt;!-- Endpoint 2 --&gt;
+  &lt;/test&gt; &lt;!-- positive_tests --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;negative_tests&quot;&gt;
+    &lt;parameter name=&quot;non_existing_user_id&quot; value=&quot;500&quot;/&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;negative_tests&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;negative_tests.TestEndpoint1&quot;/&gt;
+      &lt;class name=&quot;negative_tests.TestEndpoint2&quot;/&gt;
+      &lt;class name=&quot;negative_tests.NegativeTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- negative_tests --&gt;
+&lt;/suite&gt; &lt;!-- AllTests --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Endpoint_2" class="panel">
+        <div panel-name="testlist-AllTests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Endpoint 2</span>
+            <span class="header-content">Tests for AllTests</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Single_documents (2 classes)</span>
+                <span class="test-name">positive_tests (3 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">negative_tests (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Endpoint_2" class="panel">
+        <div panel-name="group-AllTests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Endpoint 2</span>
+            <span class="header-content">Groups for AllTests</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Endpoint_2" class="panel">
+        <div panel-name="times-AllTests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Endpoint 2</span>
+            <span class="header-content">Times for AllTests</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Endpoint_2');
-function tableData_Endpoint_2() {
+suiteTableInitFunctions.push('tableData_AllTests');
+function tableData_AllTests() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'request_to_non_existing_id_should_be_rejected')
-data.setCell(0, 2, 'negative_tests.TestEndpoint2')
-data.setCell(0, 3, 3023);
+data.setCell(0, 1, 'push_document_with_post_query')
+data.setCell(0, 2, 'negative_tests.TestEndpoint1')
+data.setCell(0, 3, 3535);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'check_query_for_single_document_is_responded_correctly')
-data.setCell(1, 2, 'positive_tests.TestEndpoint2')
-data.setCell(1, 3, 2974);
+data.setCell(1, 1, 'check_query_for_all_documents_is_responded_correctly')
+data.setCell(1, 2, 'positive_tests.TestEndpoint1')
+data.setCell(1, 3, 3424);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'request_to_non_numeric_id_should_be_rejected')
+data.setCell(2, 1, 'request_to_non_existing_id_should_be_rejected')
 data.setCell(2, 2, 'negative_tests.TestEndpoint2')
-data.setCell(2, 3, 319);
+data.setCell(2, 3, 348);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'check_response_contains_only_one_document')
+data.setCell(3, 1, 'check_query_for_single_document_is_responded_correctly')
 data.setCell(3, 2, 'positive_tests.TestEndpoint2')
-data.setCell(3, 3, 12);
+data.setCell(3, 3, 325);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'check_document_keys_and_values_are_correct')
-data.setCell(4, 2, 'positive_tests.TestEndpoint2')
-data.setCell(4, 3, 2);
-window.suiteTableData['Endpoint_2']= { tableData: data, tableDiv: 'times-div-Endpoint_2'}
+data.setCell(4, 1, 'request_to_non_numeric_id_should_be_rejected')
+data.setCell(4, 2, 'negative_tests.TestEndpoint2')
+data.setCell(4, 3, 282);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'check_array_of_documents_is_returned')
+data.setCell(5, 2, 'positive_tests.TestEndpoint1')
+data.setCell(5, 3, 22);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'check_response_contains_only_one_document')
+data.setCell(6, 2, 'positive_tests.TestEndpoint2')
+data.setCell(6, 3, 2);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'check_document_keys_and_values_are_correct')
+data.setCell(7, 2, 'positive_tests.TestEndpoint2')
+data.setCell(7, 3, 2);
+window.suiteTableData['AllTests']= { tableData: data, tableDiv: 'times-div-AllTests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
-              <div id="times-div-Endpoint_2">
-              </div> <!-- times-div-Endpoint_2 -->
+              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <div id="times-div-AllTests">
+              </div> <!-- times-div-AllTests -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Endpoint_2" class="panel">
+        <div panel-name="reporter-AllTests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Endpoint 2</span>
+            <span class="header-content">Reporter output for AllTests</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Endpoint_2" class="panel">
+        <div panel-name="ignored-methods-AllTests" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Endpoint_2" class="panel">
+        <div panel-name="chronological-AllTests" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">negative_tests.TestEndpoint2</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">positive_tests.TestEndpoint1</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">request_to_non_existing_id_should_be_rejected(https://jsonplaceholder.typicode.com/posts, 500)</span>
+                <span class="method-name">check_query_for_all_documents_is_responded_correctly(https://jsonplaceholder.typicode.com/posts)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">negative_tests.TestEndpoint1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">push_document_with_post_query(https://jsonplaceholder.typicode.com/posts)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
@@ -320,22 +437,39 @@ return data;
               <div class="chronological-class-name">positive_tests.TestEndpoint2</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">check_query_for_single_document_is_responded_correctly(https://jsonplaceholder.typicode.com/posts, 1)</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">3431 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">negative_tests.TestEndpoint2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">request_to_non_existing_id_should_be_rejected(https://jsonplaceholder.typicode.com/posts, 500)</span>
+                <span class="method-start">3548 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">positive_tests.TestEndpoint1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">check_array_of_documents_is_returned</span>
+                <span class="method-start">3769 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">positive_tests.TestEndpoint2</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">check_response_contains_only_one_document</span>
-                <span class="method-start">2992 ms</span>
+                <span class="method-start">3794 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">check_document_keys_and_values_are_correct</span>
-                <span class="method-start">3015 ms</span>
+                <span class="method-start">3799 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">negative_tests.TestEndpoint2</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">request_to_non_numeric_id_should_be_rejected(https://jsonplaceholder.typicode.com/posts)</span>
-                <span class="method-start">3026 ms</span>
+                <span class="method-start">3898 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

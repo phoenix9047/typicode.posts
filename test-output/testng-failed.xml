@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="classes" name="Failed suite [Endpoint 1]" guice-stage="DEVELOPMENT">
+<suite parallel="tests" name="Failed suite [AllTests]" guice-stage="DEVELOPMENT">
   <parameter name="endpoint" value="https://jsonplaceholder.typicode.com/posts"/>
-  <test thread-count="5" parallel="classes" name="All_Documents(failed)">
+  <test thread-count="5" parallel="tests" name="negative_tests(failed)">
+    <parameter name="non_existing_user_id" value="500"/>
     <classes>
       <class name="negative_tests.TestEndpoint1">
         <methods>
@@ -10,5 +11,5 @@
         </methods>
       </class> <!-- negative_tests.TestEndpoint1 -->
     </classes>
-  </test> <!-- All_Documents(failed) -->
-</suite> <!-- Failed suite [Endpoint 1] -->
+  </test> <!-- negative_tests(failed) -->
+</suite> <!-- Failed suite [AllTests] -->

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-07T17:14:40 IDT" name="Endpoint 2" finished-at="2021-08-07T17:14:43 IDT" duration-ms="3430">
+  <suite started-at="2021-08-07T18:00:08 IDT" name="AllTests" finished-at="2021-08-07T18:00:12 IDT" duration-ms="4260">
     <groups>
     </groups>
-    <test started-at="2021-08-07T17:14:40 IDT" name="Single_documents" finished-at="2021-08-07T17:14:43 IDT" duration-ms="3430">
+    <test started-at="2021-08-07T18:00:08 IDT" name="positive_tests" finished-at="2021-08-07T18:00:12 IDT" duration-ms="3882">
       <class name="positive_tests.TestEndpoint2">
-        <test-method signature="check_query_for_single_document_is_responded_correctly(java.lang.String,int)[pri:0, instance:positive_tests.TestEndpoint2@2805c96b]" started-at="2021-08-07T17:14:40 IDT" name="check_query_for_single_document_is_responded_correctly" description="Gets only one document by predefined ID and verifies status code and content-type" finished-at="2021-08-07T17:14:43 IDT" duration-ms="2974" status="PASS">
+        <test-method signature="check_query_for_single_document_is_responded_correctly(java.lang.String,int)[pri:0, instance:positive_tests.TestEndpoint2@2ddc8ecb]" started-at="2021-08-07T18:00:11 IDT" name="check_query_for_single_document_is_responded_correctly" description="Gets only one document by predefined ID and verifies status code and content-type" finished-at="2021-08-07T18:00:12 IDT" duration-ms="325" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,17 +23,36 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check_query_for_single_document_is_responded_correctly -->
-        <test-method signature="check_response_contains_only_one_document()[pri:0, instance:positive_tests.TestEndpoint2@2805c96b]" started-at="2021-08-07T17:14:43 IDT" name="check_response_contains_only_one_document" description="Verifies a format for the returned document.Content should be a JSON Object" finished-at="2021-08-07T17:14:43 IDT" depends-on-methods="positive_tests.TestEndpoint2.check_query_for_single_document_is_responded_correctly" duration-ms="12" status="PASS">
+        <test-method signature="check_response_contains_only_one_document()[pri:0, instance:positive_tests.TestEndpoint2@2ddc8ecb]" started-at="2021-08-07T18:00:12 IDT" name="check_response_contains_only_one_document" description="Verifies a format for the returned document.Content should be a JSON Object" finished-at="2021-08-07T18:00:12 IDT" depends-on-methods="positive_tests.TestEndpoint2.check_query_for_single_document_is_responded_correctly" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check_response_contains_only_one_document -->
-        <test-method signature="check_document_keys_and_values_are_correct()[pri:0, instance:positive_tests.TestEndpoint2@2805c96b]" started-at="2021-08-07T17:14:43 IDT" name="check_document_keys_and_values_are_correct" description="Verifies fields types in the captured document" finished-at="2021-08-07T17:14:43 IDT" depends-on-methods="positive_tests.TestEndpoint2.check_response_contains_only_one_document" duration-ms="2" status="PASS">
+        <test-method signature="check_document_keys_and_values_are_correct()[pri:0, instance:positive_tests.TestEndpoint2@2ddc8ecb]" started-at="2021-08-07T18:00:12 IDT" name="check_document_keys_and_values_are_correct" description="Verifies fields types in the captured document" finished-at="2021-08-07T18:00:12 IDT" depends-on-methods="positive_tests.TestEndpoint2.check_response_contains_only_one_document" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check_document_keys_and_values_are_correct -->
       </class> <!-- positive_tests.TestEndpoint2 -->
+      <class name="positive_tests.TestEndpoint1">
+        <test-method signature="check_query_for_all_documents_is_responded_correctly(java.lang.String)[pri:0, instance:positive_tests.TestEndpoint1@4c1d9d4b]" started-at="2021-08-07T18:00:08 IDT" name="check_query_for_all_documents_is_responded_correctly" description="Verify a response to a simple GET request to /posts" finished-at="2021-08-07T18:00:11 IDT" duration-ms="3424" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://jsonplaceholder.typicode.com/posts]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_query_for_all_documents_is_responded_correctly -->
+        <test-method signature="check_array_of_documents_is_returned()[pri:0, instance:positive_tests.TestEndpoint1@4c1d9d4b]" started-at="2021-08-07T18:00:12 IDT" name="check_array_of_documents_is_returned" description="Content of the response should be a JSON Array and should contain at least 1 document" finished-at="2021-08-07T18:00:12 IDT" depends-on-methods="positive_tests.TestEndpoint1.check_query_for_all_documents_is_responded_correctly" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_array_of_documents_is_returned -->
+      </class> <!-- positive_tests.TestEndpoint1 -->
+    </test> <!-- positive_tests -->
+    <test started-at="2021-08-07T18:00:08 IDT" name="negative_tests" finished-at="2021-08-07T18:00:12 IDT" duration-ms="4260">
       <class name="negative_tests.TestEndpoint2">
-        <test-method signature="request_to_non_existing_id_should_be_rejected(java.lang.String,int)[pri:0, instance:negative_tests.TestEndpoint2@12d4bf7e]" started-at="2021-08-07T17:14:40 IDT" name="request_to_non_existing_id_should_be_rejected" description="A GET request to a non-existing ID should be rejected with 404" finished-at="2021-08-07T17:14:43 IDT" duration-ms="3023" status="PASS">
+        <test-method signature="request_to_non_existing_id_should_be_rejected(java.lang.String,int)[pri:0, instance:negative_tests.TestEndpoint2@69b2283a]" started-at="2021-08-07T18:00:12 IDT" name="request_to_non_existing_id_should_be_rejected" description="A GET request to a non-existing ID should be rejected with 404" finished-at="2021-08-07T18:00:12 IDT" duration-ms="348" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -49,7 +68,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- request_to_non_existing_id_should_be_rejected -->
-        <test-method signature="request_to_non_numeric_id_should_be_rejected(java.lang.String)[pri:0, instance:negative_tests.TestEndpoint2@12d4bf7e]" started-at="2021-08-07T17:14:43 IDT" name="request_to_non_numeric_id_should_be_rejected" description="A GET request to a non-numeric ID should be rejected with 404" finished-at="2021-08-07T17:14:43 IDT" duration-ms="319" status="PASS">
+        <test-method signature="request_to_non_numeric_id_should_be_rejected(java.lang.String)[pri:0, instance:negative_tests.TestEndpoint2@69b2283a]" started-at="2021-08-07T18:00:12 IDT" name="request_to_non_numeric_id_should_be_rejected" description="A GET request to a non-numeric ID should be rejected with 404" finished-at="2021-08-07T18:00:12 IDT" duration-ms="282" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -61,6 +80,59 @@
           </reporter-output>
         </test-method> <!-- request_to_non_numeric_id_should_be_rejected -->
       </class> <!-- negative_tests.TestEndpoint2 -->
-    </test> <!-- Single_documents -->
-  </suite> <!-- Endpoint 2 -->
+      <class name="negative_tests.TestEndpoint1">
+        <test-method signature="push_document_with_post_query(java.lang.String)[pri:0, instance:negative_tests.TestEndpoint1@78b66d36]" started-at="2021-08-07T18:00:08 IDT" name="push_document_with_post_query" description="Send a POST request to endpoint /posts and verify it rejects with 404" finished-at="2021-08-07T18:00:12 IDT" duration-ms="3535" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://jsonplaceholder.typicode.com/posts]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [404] but found [201]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [404] but found [201]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:907)
+at org.testng.Assert.assertEquals(Assert.java:917)
+at negative_tests.NegativeTest.response_is_empty_http_not_found(NegativeTest.java:25)
+at negative_tests.TestEndpoint1.push_document_with_post_query(TestEndpoint1.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- push_document_with_post_query -->
+      </class> <!-- negative_tests.TestEndpoint1 -->
+    </test> <!-- negative_tests -->
+  </suite> <!-- AllTests -->
 </testng-results>
