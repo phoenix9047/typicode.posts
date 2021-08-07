@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [AllTests]" guice-stage="DEVELOPMENT">
+  <parameter name="endpoint" value="https://jsonplaceholder.typicode.com/posts"/>
+  <test thread-count="5" parallel="tests" name="negative_tests(failed)">
+    <parameter name="non_existing_user_id" value="500"/>
+    <classes>
+      <class name="negative_tests.TestEndpoint1">
+        <methods>
+          <include name="push_document_with_post_query" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- negative_tests.TestEndpoint1 -->
+    </classes>
+  </test> <!-- negative_tests(failed) -->
+</suite> <!-- Failed suite [AllTests] -->

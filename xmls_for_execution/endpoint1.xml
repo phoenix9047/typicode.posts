@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+ 
+<!-- Executes only classes which query only /posts URL, without specifying ID -->
+<suite name="Endpoint 1" parallel="classes" verbose="1" >
+  
+  <parameter name="endpoint" value="https://jsonplaceholder.typicode.com/posts"/>
+
+  <test name="All_Documents">
+    <classes>
+      <class name = "positive_tests.TestEndpoint1"/>
+      <class name = "negative_tests.TestEndpoint1"/>
+    </classes>
+  </test>
+
+</suite>

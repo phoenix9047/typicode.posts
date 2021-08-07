@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<!-- Executes all tests : all positive and negative tests, parallel execution by classes -->
+<suite name="AllTests" parallel="tests" verbose="1" >
+  
+  <parameter name="endpoint" value="https://jsonplaceholder.typicode.com/posts"/>
+
+  <test name="positive_tests">
+    <parameter name="correct_user_id" value="1"/>
+    <packages>
+      <package name="positive_tests" />
+    </packages>
+  </test>
+
+  <test name="negative_tests">
+    <parameter name="non_existing_user_id" value="500"/>
+    <packages>
+      <package name="negative_tests" />
+    </packages>
+ </test>
+
+</suite>
